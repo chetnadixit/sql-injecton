@@ -1,0 +1,36 @@
+*{
+    padding-left: 5px;
+    font-family: 'Girassol', cursive;
+    font-size: 120%;
+
+}
+
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    font-size: 250%;
+    background: rgb(223, 195, 223);
+}
+.heading:hover{
+    color: rgb(1, 1, 109);
+
+}
+.what{
+    font-size: 120%;
+    
+}
+.impact{
+    font-size: 120%;
+    
+}
+.hover:hover{
+    color: rgb(221, 11, 11);
+}
+.hover{
+    text-decoration: underline;
+}
+.img{
+    size: 200%;
+}

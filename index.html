@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+         SQL injection
+        </title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="heading">SQL INJECTION</h1>
+        <div class="what">
+        <h3 class="hover">What is SQL injection (SQLi)?</h3>
+        <h3>SQL injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It consists of insertion or “injection” of a SQL query via the input data from the client to the application.It usually occurs when you ask a user for input, like their username/userid, and instead of a name/id, the user gives you an SQL statement that you will unknowingly run on your database.
+       
+        </h3>
+        <h2 class="hover">Impact of SQL injection</h2>
+        <h3 class="impact">
+            A successful SQL injection attack can result in unauthorized access to sensitive data, such as passwords, credit card details, or personal user information. Many high-profile data breaches in recent years have been the result of SQL injection attacks, leading to reputational damage and regulatory fines. In some cases, an attacker can obtain a persistent backdoor into an organization's systems, leading to a long-term compromise that can go unnoticed for an extended period.
+        </h3>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/qr9xrS1/sql-image.png" alt="sql-image" border="0"></a>
+        <p>
+            Look at the following <strong><em>EXAMPLE </em></strong>  which creates a SELECT statement by adding a variable (txtuserid) to a select string.
+            <br>
+             The variable is fetched from user input (getRequestString):
+<br>             
+
+
+             <img class="img" src="https://i.ibb.co/hYRx4H0/SQL-Injection-Google-Chrome-06-05-2021-01-08-23-PM-2.png" alt="SQL-Injection-Google-Chrome-06-05-2021-01-08-23-PM-2" border="0"></br>
+Look at the example
+The original purpose of the code was to create an SQL statement to select a user, with a given user id.<br>
+
+If there is nothing to prevent a user from entering "wrong" input, the user can enter some "smart" input like this:<br>
+
+UserId:<BR> 
+105 OR 1=1<BR>
+
+Then, the SQL statement will look like this:<br>
+<a href="https://ibb.co/2YcGLx3"><img src="https://i.ibb.co/XkFcd1x/SQL-Injection-Google-Chrome-06-05-2021-02-17-27-PM-2.png" alt="SQL-Injection-Google-Chrome-06-05-2021-02-17-27-PM-2" border="0"></a>
+
+<br>
+The SQL above is valid and will return ALL rows from the "Users" table, since OR 1=1 is always TRUE.
+
+        </p>
+    </div>
+    </body>
+</html>
